@@ -19,7 +19,7 @@ func init() {
 var RootCmd = &cobra.Command{
 	Use:   "tccutil2",
 	Short: "tccutil2 is a tccutil vitaminized",
-	Long:  `tccutil2 allow you modify OS X's Accessibility Database from the command line (https://github.com/JesusTinoco/go-tccutil).`,
+	Long:  `tccutil2 allows you modify OS X's Accessibility Database from the command line (https://github.com/JesusTinoco/go-tccutil).`,
 	Run: func(cmd *cobra.Command, args []string) {
 	},
 }
