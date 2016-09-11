@@ -16,6 +16,7 @@ func init() {
 	RootCmd.AddCommand(listClients)
 }
 
+// RootCmd ...
 var RootCmd = &cobra.Command{
 	Use:   "tccutil2",
 	Short: "tccutil2 is a tccutil vitaminized",
@@ -24,6 +25,7 @@ var RootCmd = &cobra.Command{
 	},
 }
 
+// versionCmd ...
 var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "Print the version number of tccutil2",
@@ -33,6 +35,7 @@ var versionCmd = &cobra.Command{
 	},
 }
 
+// addClient ...
 var addClient = &cobra.Command{
 	Use:        "add",
 	Short:      "Add new clients to the database",
@@ -45,6 +48,7 @@ var addClient = &cobra.Command{
 	},
 }
 
+// removeClient ...
 var removeClient = &cobra.Command{
 	Use:        "remove",
 	Short:      "Remove clients from the database",
@@ -57,6 +61,7 @@ var removeClient = &cobra.Command{
 	},
 }
 
+// enableClient ...
 var enableClient = &cobra.Command{
 	Use:        "enable",
 	Short:      "Enable the given clients",
@@ -69,6 +74,7 @@ var enableClient = &cobra.Command{
 	},
 }
 
+// disableClient ...
 var disableClient = &cobra.Command{
 	Use:   "disable",
 	Short: "Disable the given clients",
@@ -80,6 +86,7 @@ var disableClient = &cobra.Command{
 	},
 }
 
+// listClients ...
 var listClients = &cobra.Command{
 	Use:   "list",
 	Short: "List all the current clients registered.",
